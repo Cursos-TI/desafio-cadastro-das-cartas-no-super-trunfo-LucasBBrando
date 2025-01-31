@@ -31,7 +31,7 @@ int main() {
     scanf("%s",&cidade1);
 
     printf("Incira o numero da População:\n");
-    scanf("%f",&populacao1);
+    scanf("%u",&populacao1);
 
     printf("Incira o tamanho da Área da Cidade:\n");
     scanf("%f",&area1);
@@ -50,7 +50,7 @@ int main() {
     scanf("%s",&cidade2);
 
     printf("Incira o numero da População:\n");
-    scanf("%f",&populacao2);
+    scanf("%u",&populacao2);
 
     printf("Incira o tamanho da Área:\n");
     scanf("%f",&area2);
@@ -93,10 +93,15 @@ int main() {
     printf("*PIB per Capita: %.2f \n*Dencidade Populacional: %.0f \n \n", pibCapita2, dencidadePopulacao2);
     printf("**SUPER PODER: %.0f** \n \n", somaTotal2);
 
+    char* resultComparacao1 = ((float)pibCapita1 > pibCapita2) ? "Primeira cidade ganhou" : "Segunda cidade ganhou";
+    char* resultComparacao2 = ((float) dencidadePopulacao1 > dencidadePopulacao2) ? "Primeira cidade ganhou" : "Segunda cidade ganhou";
+    char* resultComparacao3 = somaTotal1 > somaTotal2 ? "Primeira cidade ganhou" : "Segunda cidade ganhou";
+    
     //Comparações das cartas
     printf("COMPARACAO!\n\n");
-    printf("lerolero\n");
-    printf("");
+    printf("*PIB PER CAPITA: %s\n", resultComparacao1);
+    printf("*DENCIDADE POPULACIONAL: %s\n", resultComparacao2);
+    printf("*SUPER PODER: %s\n", resultComparacao3);
 
     return 0;
 }
