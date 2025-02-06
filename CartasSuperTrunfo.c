@@ -27,38 +27,38 @@ int main() {
 
     printf("PRIMEIRA CARTA!! \n \n");
 
-    printf("Incira o nome da Cidade:\n");
+    printf("Insira o nome da Cidade:\n");
     scanf("%s",&cidade1);
 
-    printf("Incira o numero da População:\n");
+    printf("Insira o numero da População:\n");
     scanf("%u",&populacao1);
 
-    printf("Incira o tamanho da Área da Cidade:\n");
+    printf("Insira o tamanho da Área da Cidade:\n");
     scanf("%f",&area1);
 
-    printf("Incira o PIB:\n");
+    printf("Insira o PIB:\n");
     scanf("%f",&pib1);
 
-    printf("Incira os Pontos Turisticos da Cidade:\n");
+    printf("Insira os Pontos Turisticos da Cidade:\n");
     scanf("%f",&pontosTuristicos1);
 
     //Segunda coleta de dados para carta-completo
 
     printf("\nSEGUNDA CARTA!! \n \n");
     
-    printf("Incira o nome da Cidade:\n");
+    printf("Insira o nome da Cidade:\n");
     scanf("%s",&cidade2);
 
-    printf("Incira o numero da População:\n");
+    printf("Insira o numero da População:\n");
     scanf("%u",&populacao2);
 
-    printf("Incira o tamanho da Área:\n");
+    printf("Insira o tamanho da Área:\n");
     scanf("%f",&area2);
 
-    printf("Incira o PIB:\n");
+    printf("Insira o PIB:\n");
     scanf("%f",&pib2);
 
-    printf("Incira os Pontos Turisticos da Cidade:\n");
+    printf("Insira os Pontos Turisticos da Cidade:\n");
     scanf("%f",&pontosTuristicos2);
     
     // Exibição dos Dados das Cartas:
@@ -69,7 +69,7 @@ int main() {
     printf("##AGORA AS CARTAS## \n \n");
 
     //primeira carta - colocar a comparação- concluido
-    printf("Primeira Carta Incerida!!\n \n");
+    printf("Primeira Carta Inserida!!\n \n");
     printf("*Cod: %d \n*Nome da Cidade: %s\n*População: %.0f\n",numCidade1, cidade1, populacao1);
     printf("*Área: %.2f \n*PIB da Cidade: $%.2f \n*Pontos turisticos: %.0f \n \n", area1, pib1, pontosTuristicos1);
 
@@ -81,7 +81,7 @@ int main() {
     printf("**SUPER PODER: %.0f** \n \n", somaTotal1);
     
     //segunda carta - colocar a comparação- concluido
-    printf("Segunda Carta Incerida!!\n \n");
+    printf("Segunda Carta Inserida!!\n \n");
     printf("*Cod: %d \n*Nome da Cidade: %s\n*População: %.0f\n",numCidade2, cidade2, populacao2);
     printf("*Área: %.2f \n*PIB da Cidade: $%.2f \n*Pontos turisticos: %.0f \n \n", area2, pib2, pontosTuristicos2);
     
@@ -94,7 +94,7 @@ int main() {
     printf("**SUPER PODER: %.0f** \n \n", somaTotal2);
 
     char* resultComparacao1 = ((float)pibCapita1 > pibCapita2) ? "Primeira cidade ganhou" : "Segunda cidade ganhou";
-    char* resultComparacao2 = ((float) dencidadePopulacao1 > dencidadePopulacao2) ? "Primeira cidade ganhou" : "Segunda cidade ganhou";
+    char* resultComparacao2 = ((float) dencidadePopulacao1 < dencidadePopulacao2) ? "Primeira cidade ganhou" : "Segunda cidade ganhou";
     char* resultComparacao3 = somaTotal1 > somaTotal2 ? "Primeira cidade ganhou" : "Segunda cidade ganhou";
     
     //Comparações das cartas
